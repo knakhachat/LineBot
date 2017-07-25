@@ -23,15 +23,18 @@ if (!is_null($events['events'])) {
 			];*/
 			
 			if($text=="สวัสดี"){
-				$messages = [
-				'type' => 'text',
-				'text' => "สวัสดี" ];
+				$textreply="สวัสดีจ้า";
 			}else if($text=="ชื่ออะไร"){
+				$textreply="i am bot Line version 1.0";
+			}else if($text=="อั๋น"){
+				$textreply="ทำงานอยู่มั้ง";
+			}else if($text=="ง่วง"){
+				$textreply="ไปนอนไป๊";
+			}
+			
 				$messages = [
 				'type' => 'text',
-				'text' => "น้อง Bot" ];
-				
-			}
+				'text' => $textreply ];
 			
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
