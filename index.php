@@ -6,7 +6,7 @@ $choice3="ดีใจจังคันหลังก็ลาว";
 $choice4="สนุกมั้ย";
 $arr=array ( $choice1,$choice2,$choice3,$choiec4); 
 shuffle($arr);
-foreach ($textreply as $arr) {
-    echo "$textreply ";
+foreach ($num as $arr) {
+    echo $num;
 }
 echo "Hello world";
