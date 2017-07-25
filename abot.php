@@ -29,7 +29,16 @@ if (!is_null($events['events'])) {
 			}else if($text=="อั๋น"){
 				$textreply="ทำงานอยู่มั้ง";
 			}else if($text=="ง่วง"){
-				$textreply="ไปนอนไป๊";
+				
+				function quote_generate()
+				{
+					$quote = array("ไปนอนไป๊","นอนดึกเหรอ","ไปทำอะไรมา","ติดซีรี่ย์อ่ะดิ","เหมือนกันเลย");
+
+					return($quote[rand(0, count($quote) - 1)]);
+				}
+
+				//echo quote_generate();
+				$textreply=quote_generate();
 			}
 			
 				$messages = [
