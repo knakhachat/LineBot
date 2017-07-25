@@ -25,20 +25,13 @@ if (!is_null($events['events'])) {
 			if($text=="สวัสดี"){
 				$textreply="สวัสดีจ้า";
 			}else if($text=="ชื่ออะไร"){
-				$textreply="i am bot Line version 1.0";
+				$textreply="น้องบอท";
 			}else if($text=="อั๋น"){
 				$textreply="ทำงานอยู่มั้ง";
 			}else if($text=="ง่วง"){
-				
-				function quote_generate()
-				{
-					$quote = array("ไปนอนไป๊","นอนดึกเหรอ","ไปทำอะไรมา","ติดซีรี่ย์อ่ะดิ","เหมือนกันเลย");
-
-					return($quote[rand(0, count($quote) - 1)]);
-				}
-
-				//echo quote_generate();
-				$textreply=quote_generate();
+				//Random Message
+				$quote = array("ไปนอนไป๊","นอนดึกเหรอ","ไปทำอะไรมา","ติดซีรี่ย์อ่ะดิ","เหมือนกันเลย","กินกาแฟมะ","มากป่ะ");
+				$textreply=quote_generate($quote);
 			}
 			
 				$messages = [
@@ -66,5 +59,10 @@ if (!is_null($events['events'])) {
 			echo $result . "\r\n";
 		}
 	}
+}
+
+function quote_generate($quote){				
+
+	return($quote[rand(0, count($quote) - 1)]);
 }
 echo "OK";
