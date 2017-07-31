@@ -41,7 +41,20 @@ if (!is_null($events['events'])) {
 				//Random Message
 				$quote = array("ใครถูกพาไปเลี้ยงด้วย","มีเลขเด็ดบอกกันบ้างนะ","ขอให้โชคดี","ฝากเจ๊โอ๊ตเล่น","เมื่อคืนฝันอะไรหว่า");
 				$textreply=quote_generate($quote);
+			}else if(stristr($text,"อยู่ยาก")==TRUE){
+				//Random Message
+				$quote = array("ทำใจให้สบายนะ","สัตว์โลกย่อมเป็นไปตามกรรม","ยากยังไงก็ต้องอยู่","ไปไหนดีอ่ะ","พักร้อนดีกว่า");
+				$textreply=quote_generate($quote);
+			}else if(stristr($text,"เจ๊")==TRUE){
+				//Random Message
+				$quote = array("เจ๊ไหนเอ่ย","เจ๊โอ๊ต เจ๊หน่อย","หันซ้ายหันขวา มีแต่ป้าล้วนๆ","เจ๊โอ๊ตถูกหวยหรา","...");
+				$textreply=quote_generate($quote);
+			}else if(stristr($text,"ไปกิน")==TRUE){
+				//Random Message
+				$quote = array("ไปกินด้วยดิ","ใครเลี้ยงนู๋ไปด้วย");
+				$textreply=quote_generate($quote);
 			}
+			
 			
 				$messages = [
 				'type' => 'text',
