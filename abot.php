@@ -53,6 +53,10 @@ if (!is_null($events['events'])) {
 				//Random Message
 				$quote = array("ไปกินด้วยดิ","ใครเลี้ยงนู๋ไปด้วย");
 				$textreply=quote_generate($quote);
+			}else if((stristr($text,"ปาร์ตี้")==TRUE)||(stristr($text,"ปาตี้")==TRUE)||(stristr($text,"party")==TRUE)){
+				//Random Message
+				$quote = array("บ้านใครๆ","ไปไหนไปด้วย","เนื่องในโอกาส");
+				$textreply=quote_generate($quote);
 			}
 			
 			
