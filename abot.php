@@ -65,6 +65,14 @@ if (!is_null($events['events'])) {
 				//Random Message
 				$quote = array("ขอข้างบ้านไปก่อน","รีบหาเลย","แย่ละ","ฝากหาด้วย","เติมๆ");
 				$textreply=quote_generate($quote);
+			}else if(stristr($text,"ไหนกันดี")==TRUE){
+				//Random Message
+				$quote = array("ได้หมดถ้าสดชื่น","ไปทะเลกันดีก่า ไปเล่นลมโต้คลื่น","ไปไหนไปด้วย ขอช่วย 2 บาท","จัดไป");
+				$textreply=quote_generate($quote);
+			}else if(stristr($text,"เหงา")==TRUE){
+				//Random Message
+				$quote = array("โทรชวนเจ๊โอ๊ตไปกินของหวานจิ","เด็กข้างบ้านไปเลี้ยงมั้ย มีให้เลือกหลายคนเลย","โทรหาพี่อ้อยพี่ฉอดไป๊","ปาร์ตี้");
+				$textreply=quote_generate($quote);
 			}else if(stristr($text,"เงินเดือน")==TRUE){
 				//Random Message
 				$quote = array("เงินเดือนคืออะไร?","ผ่านมาแล้วก็ผ่านไป","หมดตั้งกะวันที่ 1 แล้ว","เงินเดือนนั้นหายาก ต้องลำบากตรากตรำไป");
