@@ -27,7 +27,8 @@ if (!is_null($events['events'])) {
 			}else if($text=="ชื่ออะไร"){
 				$textreply="น้องบอท";
 			}else if($text=="อั๋น"){
-				$textreply="ทำงานอยู่มั้ง";
+				$quote = array("ทำงานอยู่มั้ง","สงสัยหลับ","ไปไหนไม่รู้","ตาอั๋นๆ มีคนเรียก","หมู่นี้ไม่ค่อยเจอ");
+				$textreply=quote_generate($quote);
 			}else if($text=="ง่วง"){
 				//Random Message
 				$quote = array("ไปนอนไป๊","นอนดึกเหรอ","ไปทำอะไรมา","ติดซีรี่ย์อ่ะดิ","เหมือนกันเลย","กินกาแฟมะ","มากป่ะ");
