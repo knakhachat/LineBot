@@ -77,9 +77,17 @@ if (!is_null($events['events'])) {
 				//Random Message
 				$quote = array("เงินเดือนคืออะไร?","ผ่านมาแล้วก็ผ่านไป","หมดตั้งกะวันที่ 1 แล้ว","เงินเดือนนั้นหายาก ต้องลำบากตรากตรำไป");
 				$textreply=quote_generate($quote);
+			}else if(stristr($text,"ข้างบ้าน")==TRUE){
+				//Random Message
+				$quote = array("ซ้ายขวา","หลังไหน","38/???","...");
+				$textreply=quote_generate($quote);
 			}else if(stristr($text,"555")==TRUE){
 				//Random Message
 				$quote = array("666","ขำไรนักหนา","หุหุหุ","เลขท้าย 3 ตัว 555","ฮ่าฮ่าฮ่า");
+				$textreply=quote_generate($quote);
+			}else if(stristr($text,"กวน")==TRUE){
+				//Random Message
+				$quote = array("กวนทีนหรา","กวนมะม่วง","ป่าวกวนน๊า","555","วิ่งไปหลบหลังบ้าน");
 				$textreply=quote_generate($quote);
 			}else if((stristr($text,"ปาร์ตี้")==TRUE)||(stristr($text,"ปาตี้")==TRUE)||(stristr($text,"party")==TRUE)){
 				//Random Message
