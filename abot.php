@@ -61,6 +61,14 @@ if (!is_null($events['events'])) {
 				//Random Message
 				$quote = array("ป้าข้างบ้าน","คุณพี่คนสวย","หุหุ","งวดนี้มีเลขเด็ด");
 				$textreply=quote_generate($quote);
+			}else if(stristr($text,"ของหมด")==TRUE){
+				//Random Message
+				$quote = array("ขอข้างบ้านไปก่อน","รีบหาเลย","แย่ละ","ฝากหาด้วย","เติมๆ");
+				$textreply=quote_generate($quote);
+			}else if(stristr($text,"เงินเดือน")==TRUE){
+				//Random Message
+				$quote = array("เงินเดือนคืออะไร?","ผ่านมาแล้วก็ผ่านไป","หมดตั้งกะวันที่ 1 แล้ว","เงินเดือนนั้นหายาก ต้องลำบากตรากตรำไป");
+				$textreply=quote_generate($quote);
 			}else if(stristr($text,"555")==TRUE){
 				//Random Message
 				$quote = array("666","ขำไรนักหนา","หุหุหุ","เลขท้าย 3 ตัว 555","ฮ่าฮ่าฮ่า");
