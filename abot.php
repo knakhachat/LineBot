@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 				$textreply="สวัสดีจ้า";
 			}else if($text=="ชื่ออะไร"){
 				$textreply="น้องบอท";
-			}else if(stristr($text,"อั๋น")===TRUE){
+			}else if(stristr($text,"อั๋น")==TRUE){
 				$quote = array("ทำงานอยู่มั้ง","สงสัยหลับ","ไปไหนไม่รู้","ตาอั๋นๆ มีคนเรียก","หมู่นี้ไม่ค่อยเจอ");
 				$textreply=quote_generate($quote);
 			}else if($text=="ง่วง"){
