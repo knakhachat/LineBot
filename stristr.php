@@ -1,6 +1,6 @@
 <?php
 $text ="Hello World";
-if(stristr($text,"World") === TRUE){
+if(stristr($text,"World") == TRUE){
 
 echo "i can find my world";
 }
