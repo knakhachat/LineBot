@@ -57,6 +57,14 @@ if (!is_null($events['events'])) {
 				//Random Message
 				$quote = array("จัดไรกัน","ยาวไปๆ","กี่ดอก","หึหึ","ไปด้วย");
 				$textreply=quote_generate($quote);
+			}else if(stristr($text,"โอ๊ต")==TRUE){
+				//Random Message
+				$quote = array("ป้าข้างบ้าน","คุณพี่คนสวย","หุหุ","งวดนี้มีเลขเด็ด");
+				$textreply=quote_generate($quote);
+			}else if(stristr($text,"555")==TRUE){
+				//Random Message
+				$quote = array("666","ขำไรนักหนา","หุหุหุ","เลขท้าย 3 ตัว 555","ฮ่าฮ่าฮ่า");
+				$textreply=quote_generate($quote);
 			}else if((stristr($text,"ปาร์ตี้")==TRUE)||(stristr($text,"ปาตี้")==TRUE)||(stristr($text,"party")==TRUE)){
 				//Random Message
 				$quote = array("บ้านใครๆ","ไปไหนไปด้วย","เนื่องในโอกาส");
