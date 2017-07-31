@@ -29,9 +29,17 @@ if (!is_null($events['events'])) {
 			}else if(stristr($text,"อั๋น")==TRUE){
 				$quote = array("ทำงานอยู่มั้ง","สงสัยหลับ","ไปไหนไม่รู้","ตาอั๋นๆ มีคนเรียก","หมู่นี้ไม่ค่อยเจอ");
 				$textreply=quote_generate($quote);
-			}else if($text=="ง่วง"){
+			}else if(stristr($text,"ง่วง")==TRUE){
 				//Random Message
 				$quote = array("ไปนอนไป๊","นอนดึกเหรอ","ไปทำอะไรมา","ติดซีรี่ย์อ่ะดิ","เหมือนกันเลย","กินกาแฟมะ","มากป่ะ");
+				$textreply=quote_generate($quote);
+			}else if(stristr($text,"ตี้")==TRUE){
+				//Random Message
+				$quote = array("ตี้ไหน","ใช่นัตป่ะ","แขกตี้ป่ะ","กรุณาเรียกชื่อให้ครบ เดี๋ยวแปลผิด");
+				$textreply=quote_generate($quote);
+			}else if(stristr($text,"หวย")==TRUE){
+				//Random Message
+				$quote = array("ใครถูกพาไปเลี้ยงด้วย","มีเลขเด็ดบอกกันบ้างนะ","ขอให้โชคดี","ฝากเจ๊โอ๊ตเล่น","เมื่อคืนฝันอะไรหว่า");
 				$textreply=quote_generate($quote);
 			}
 			
