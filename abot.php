@@ -97,6 +97,10 @@ if (!is_null($events['events'])) {
 				//Random Message
 				$quote = array("บ้านใครๆ","ไปไหนไปด้วย","เนื่องในโอกาส");
 				$textreply=quote_generate($quote);
+			}else if((stristr($text,"tel อั๋น")==TRUE) || (stristr($text,"tel aun")){
+				//Random Message
+				$quote = array("086-881-4500");
+				$textreply=quote_generate($quote);
 			}
 			
 			
