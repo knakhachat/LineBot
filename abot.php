@@ -89,6 +89,10 @@ if (!is_null($events['events'])) {
 				//Random Message
 				$quote = array("กวนทีนหรา","กวนมะม่วง","ป่าวกวนน๊า","555","วิ่งไปหลบหลังบ้าน");
 				$textreply=quote_generate($quote);
+			}else if(stristr($text,"HBD")==TRUE){
+				//Random Message
+				$quote = array("กินเค๊กกัน","มีความสุขมากๆน๊า","ขออำนาจคุณพระศรีรัตนไตรจงดลบันดาลให้มีความสุขตลอดไปจ้า","Happy Birth Day","วันเกิดใครอ่ะ");
+				$textreply=quote_generate($quote);
 			}else if((stristr($text,"ปาร์ตี้")==TRUE)||(stristr($text,"ปาตี้")==TRUE)||(stristr($text,"party")==TRUE)){
 				//Random Message
 				$quote = array("บ้านใครๆ","ไปไหนไปด้วย","เนื่องในโอกาส");
