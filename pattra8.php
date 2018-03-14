@@ -57,7 +57,7 @@ if (!is_null($events['events'])) {
 				//Random Message
 				$quote = array("เงินเดือนคืออะไร?","ผ่านมาแล้วก็ผ่านไป","หมดตั้งกะวันที่ 1 แล้ว","เงินเดือนนั้นหายาก ต้องลำบากตรากตรำไป");
 				$textreply=quote_generate($quote);
-			}else if((stristr($text,"HBD")==TRUE) || (stristr($text,"Happy birth day")==TRUE) || (stristr($text,"วันเกิด")=TRUE)) {
+			}else if((stristr($text,"HBD")==TRUE) || (stristr($text,"Happy birth day")==TRUE) || (stristr($text,"วันเกิด")==TRUE)){
 				//Random Message
 				$quote = array("กินเค๊กกัน","มีความสุขมากๆน๊า","ขออำนาจคุณพระศรีรัตนไตรจงดลบันดาลให้มีความสุขตลอดไปจ้า","Happy Birth Day","วันเกิดใครอ่ะ");
 				$textreply=quote_generate($quote);
