@@ -26,8 +26,8 @@ if (!is_null($events['events'])) {
 				$textreply="สวัสดีจ้า";
 			}else if($text=="ชื่ออะไร"){
 				$textreply="น้องบอท";
-			}else if(stristr($text,"อั๋น")==TRUE){
-				$quote = array("ทำงานอยู่มั้ง","สงสัยหลับ","ไปไหนไม่รู้","ตาอั๋นๆ มีคนเรียก","หมู่นี้ไม่ค่อยเจอ");
+			}else if((stristr($text,"พ่นยุง")==TRUE) || (stristr($text,"ฉีดยุง")==TRUE)){
+				$quote = array("เบอร์ติดต่อ ฝ่ายสิ่งแวดล้อม เขตลาดพร้าว (พ่นยุง) โทร 025397773 คุณสมชาย 0994579460 (imp)");
 				$textreply=quote_generate($quote);
 			}else if(stristr($text,"ง่วง")==TRUE){
 				//Random Message
